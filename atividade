@@ -1,0 +1,39 @@
+#include <iostream>
+
+// Função para adição
+float adicao(float a, float b) {
+    return a + b;
+}
+
+// Função para subtração
+float subtracao(float a, float b) {
+    return a - b;
+}
+
+// Função para multiplicação
+float multiplicacao(float a, float b) {
+    return a * b;
+}
+
+// Função para divisão
+float divisao(float a, float b) {
+    if (b != 0) {
+        return a / b;
+    } else {
+        std::cout << "Erro: Divisão por zero!" << std::endl;
+        return 0; // Poderia retornar um valor especial para indicar erro
+    }
+}
+
+int main() {
+    float num1 = 10;
+    float num2 = 5;
+
+    // Testando as funções
+    std::cout << "Soma: " << adicao(num1, num2) << std::endl;
+    std::cout << "Subtração: " << subtracao(num1, num2) << std::endl;
+    std::cout << "Multiplicação: " << multiplicacao(num1, num2) << std::endl;
+    std::cout << "Divisão: " << divisao(num1, num2) << std::endl;
+
+    return 0;
+}
